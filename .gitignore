@@ -1,3 +1,6 @@
 __pycache__/
 frames_*/
 data/
+venv/
+.env
+models/weights/*.joblib

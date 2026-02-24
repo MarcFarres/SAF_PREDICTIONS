@@ -57,6 +57,34 @@ uvicorn api:app --host 0.0.0.0 --port 8000
 
 La documentación interactiva (Swagger) estará en `http://localhost:8000/docs`.
 
+### Desarrollo local con ngrok
+
+Para exponer la API local a internet (por ejemplo, para que un frontend en otro equipo o servicio la consuma):
+
+1. **Arrancar la API** en una terminal:
+
+```bash
+cd ruta/al/proyecto/SAF
+python -m venv venv          # solo la primera vez
+.\venv\Scripts\Activate      # Windows
+pip install -r requirements.txt
+uvicorn api:app --host 127.0.0.1 --port 8000
+```
+
+2. **Exponer con ngrok** en otra terminal:
+
+```bash
+ngrok http 8000
+```
+
+3. Ngrok mostrará una URL pública (ej. `https://abc123.ngrok-free.app`). Usa esa URL como base para las llamadas desde el frontend.
+
+4. **Comprobar:**
+   - Local: `http://127.0.0.1:8000/health`
+   - Público: `https://tu-url.ngrok-free.app/health`
+
+**Nota:** Si no tienes ngrok, descárgalo en [ngrok.com](https://ngrok.com/download).
+
 ### Endpoints
 
 | Método | Ruta      | Descripción                |
