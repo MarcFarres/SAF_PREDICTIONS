@@ -59,6 +59,7 @@ class PredictResponse(BaseModel):
     predictions: List[float]
     capacitances: List[CapacitanceItem]
     dates: List[str]
+    ccpmp: float  # Umbral de humedad sugerido según predicción (mínimo esperado)
 
 
 def normalize_dataframe(df: pd.DataFrame) -> pd.DataFrame:
@@ -252,9 +253,13 @@ def predict(request: PredictRequest):
 
     dates = [str(d) for d in df["date"].iloc[: request.previous_points]]
 
+    # Calcular ccpmp: mínimo de las predicciones (nivel más bajo esperado)
+    ccpmp = min(predictions) if predictions else previous_values[-1]
+
     return PredictResponse(
         previous_values=previous_values,
         predictions=predictions,
         capacitances=capacitances,
         dates=dates,
+        ccpmp=ccpmp,
     )
