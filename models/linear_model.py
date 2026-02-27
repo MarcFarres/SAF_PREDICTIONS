@@ -222,7 +222,7 @@ class LinearModel():
             
             if self.plain_detector.predict(plain_input):
                 plain_steps += 1
-                prev_pred = predictions[-1]
+                prev_pred = predictions[-1] if predictions else previous_data[-1]
                 predictions.append(prev_pred)
             
             else:

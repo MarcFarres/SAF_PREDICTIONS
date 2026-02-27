@@ -61,6 +61,10 @@ class MLModel():
         df_decay["hour"] = df_decay["date"].dt.hour
         df_decay["season"] = df_decay["date"].dt.month.apply(preprocess.get_season)
         df_decay = pd.get_dummies(df_decay, columns=['season'])
+        # Asegurar que existan las 3 columnas de estación (el ML usa autumn, spring, summer; winter es referencia)
+        for col in ["season_autumn", "season_spring", "season_summer"]:
+            if col not in df_decay.columns:
+                df_decay[col] = 0
         df_decay['soil_moisture_next'] = df_decay['soil_moisture_40'].shift(-1)
         df_decay['next_steps'] = df_decay['steps_from_peak'].shift(-1)
         df_decay = df_decay[df_decay["next_steps"] != 0]

@@ -170,6 +170,11 @@ def get_dataset_from_df(df : pd.DataFrame, threshold_up : float) -> pd.DataFrame
     df_decay["hour"] = df_decay["date"].dt.hour
     df_decay["season"] = df_decay["date"].dt.month.apply(get_season)
     df_decay = pd.get_dummies(df_decay, columns=['season'])
+    # Asegurar que existan las 4 columnas de estación (get_dummies solo crea las que hay en los datos)
+    season_cols = ["season_autumn", "season_spring", "season_summer", "season_winter"]
+    for col in season_cols:
+        if col not in df_decay.columns:
+            df_decay[col] = 0
     df_decay["hour_s"] = np.sin(2 * np.pi * df_decay["hour"])
     df_decay["hour_c"] = np.cos(2 * np.pi * df_decay["hour"])
     df_decay = df_decay.drop(columns=["soil_moisture_20", "soil_moisture_60", "hour"])[:-1]
