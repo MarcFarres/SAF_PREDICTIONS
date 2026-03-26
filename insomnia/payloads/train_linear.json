@@ -1,0 +1,2606 @@
+{
+  "sensor_id": "1082",
+  "model": "Linear",
+  "data": [
+    {
+      "date": "2024-06-01 08:00:00",
+      "soil_moisture_40": 0.42,
+      "irrigation_volume_0": 15.0
+    },
+    {
+      "date": "2024-06-01 08:30:00",
+      "soil_moisture_40": 0.4188,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 09:00:00",
+      "soil_moisture_40": 0.4176,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 09:30:00",
+      "soil_moisture_40": 0.41641,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 10:00:00",
+      "soil_moisture_40": 0.41522,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 10:30:00",
+      "soil_moisture_40": 0.41403,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 11:00:00",
+      "soil_moisture_40": 0.41284,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 11:30:00",
+      "soil_moisture_40": 0.41166,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 12:00:00",
+      "soil_moisture_40": 0.41048,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 12:30:00",
+      "soil_moisture_40": 0.40931,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 13:00:00",
+      "soil_moisture_40": 0.40813,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 13:30:00",
+      "soil_moisture_40": 0.40696,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 14:00:00",
+      "soil_moisture_40": 0.4058,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 14:30:00",
+      "soil_moisture_40": 0.40463,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 15:00:00",
+      "soil_moisture_40": 0.40347,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 15:30:00",
+      "soil_moisture_40": 0.40231,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 16:00:00",
+      "soil_moisture_40": 0.40116,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 16:30:00",
+      "soil_moisture_40": 0.4,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 17:00:00",
+      "soil_moisture_40": 0.39885,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 17:30:00",
+      "soil_moisture_40": 0.39771,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 18:00:00",
+      "soil_moisture_40": 0.39656,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 18:30:00",
+      "soil_moisture_40": 0.39542,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 19:00:00",
+      "soil_moisture_40": 0.39428,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 19:30:00",
+      "soil_moisture_40": 0.39315,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 20:00:00",
+      "soil_moisture_40": 0.39201,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 20:30:00",
+      "soil_moisture_40": 0.39088,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 21:00:00",
+      "soil_moisture_40": 0.38976,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 21:30:00",
+      "soil_moisture_40": 0.38863,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 22:00:00",
+      "soil_moisture_40": 0.38751,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 22:30:00",
+      "soil_moisture_40": 0.38639,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 23:00:00",
+      "soil_moisture_40": 0.38528,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-01 23:30:00",
+      "soil_moisture_40": 0.38416,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 00:00:00",
+      "soil_moisture_40": 0.38305,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 00:30:00",
+      "soil_moisture_40": 0.38194,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 01:00:00",
+      "soil_moisture_40": 0.38084,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 01:30:00",
+      "soil_moisture_40": 0.37974,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 02:00:00",
+      "soil_moisture_40": 0.37864,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 02:30:00",
+      "soil_moisture_40": 0.37754,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 03:00:00",
+      "soil_moisture_40": 0.37645,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 03:30:00",
+      "soil_moisture_40": 0.37536,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 04:00:00",
+      "soil_moisture_40": 0.37427,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 04:30:00",
+      "soil_moisture_40": 0.37318,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 05:00:00",
+      "soil_moisture_40": 0.3721,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 05:30:00",
+      "soil_moisture_40": 0.37102,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 06:00:00",
+      "soil_moisture_40": 0.36994,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 06:30:00",
+      "soil_moisture_40": 0.36887,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 07:00:00",
+      "soil_moisture_40": 0.36779,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 07:30:00",
+      "soil_moisture_40": 0.36672,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 08:00:00",
+      "soil_moisture_40": 0.36566,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 08:30:00",
+      "soil_moisture_40": 0.36459,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 09:00:00",
+      "soil_moisture_40": 0.36353,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 09:30:00",
+      "soil_moisture_40": 0.36247,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 10:00:00",
+      "soil_moisture_40": 0.36142,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 10:30:00",
+      "soil_moisture_40": 0.36036,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 11:00:00",
+      "soil_moisture_40": 0.35931,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 11:30:00",
+      "soil_moisture_40": 0.35826,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 12:00:00",
+      "soil_moisture_40": 0.35722,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 12:30:00",
+      "soil_moisture_40": 0.35618,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 13:00:00",
+      "soil_moisture_40": 0.35514,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 13:30:00",
+      "soil_moisture_40": 0.3541,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 14:00:00",
+      "soil_moisture_40": 0.35306,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 14:30:00",
+      "soil_moisture_40": 0.35203,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 15:00:00",
+      "soil_moisture_40": 0.351,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 15:30:00",
+      "soil_moisture_40": 0.34997,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 16:00:00",
+      "soil_moisture_40": 0.34895,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 16:30:00",
+      "soil_moisture_40": 0.34792,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 17:00:00",
+      "soil_moisture_40": 0.3469,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 17:30:00",
+      "soil_moisture_40": 0.34589,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 18:00:00",
+      "soil_moisture_40": 0.34487,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 18:30:00",
+      "soil_moisture_40": 0.34386,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 19:00:00",
+      "soil_moisture_40": 0.34285,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 19:30:00",
+      "soil_moisture_40": 0.34184,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 20:00:00",
+      "soil_moisture_40": 0.34084,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 20:30:00",
+      "soil_moisture_40": 0.33984,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 21:00:00",
+      "soil_moisture_40": 0.33884,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 21:30:00",
+      "soil_moisture_40": 0.33784,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 22:00:00",
+      "soil_moisture_40": 0.33685,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 22:30:00",
+      "soil_moisture_40": 0.33585,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 23:00:00",
+      "soil_moisture_40": 0.33486,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-02 23:30:00",
+      "soil_moisture_40": 0.33388,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 00:00:00",
+      "soil_moisture_40": 0.33289,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 00:30:00",
+      "soil_moisture_40": 0.33191,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 01:00:00",
+      "soil_moisture_40": 0.33093,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 01:30:00",
+      "soil_moisture_40": 0.32995,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 02:00:00",
+      "soil_moisture_40": 0.32898,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 02:30:00",
+      "soil_moisture_40": 0.32801,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 03:00:00",
+      "soil_moisture_40": 0.32704,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 03:30:00",
+      "soil_moisture_40": 0.32607,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 04:00:00",
+      "soil_moisture_40": 0.3251,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 04:30:00",
+      "soil_moisture_40": 0.32414,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 05:00:00",
+      "soil_moisture_40": 0.32318,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 05:30:00",
+      "soil_moisture_40": 0.32222,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 06:00:00",
+      "soil_moisture_40": 0.32127,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 06:30:00",
+      "soil_moisture_40": 0.32031,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 07:00:00",
+      "soil_moisture_40": 0.31936,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 07:30:00",
+      "soil_moisture_40": 0.31841,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 08:00:00",
+      "soil_moisture_40": 0.31747,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 08:30:00",
+      "soil_moisture_40": 0.31652,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 09:00:00",
+      "soil_moisture_40": 0.31558,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 09:30:00",
+      "soil_moisture_40": 0.31464,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 10:00:00",
+      "soil_moisture_40": 0.37464,
+      "irrigation_volume_0": 10.0
+    },
+    {
+      "date": "2024-06-03 10:30:00",
+      "soil_moisture_40": 0.37356,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 11:00:00",
+      "soil_moisture_40": 0.37247,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 11:30:00",
+      "soil_moisture_40": 0.37139,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 12:00:00",
+      "soil_moisture_40": 0.37031,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 12:30:00",
+      "soil_moisture_40": 0.36924,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 13:00:00",
+      "soil_moisture_40": 0.36816,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 13:30:00",
+      "soil_moisture_40": 0.36709,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 14:00:00",
+      "soil_moisture_40": 0.36603,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 14:30:00",
+      "soil_moisture_40": 0.36496,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 15:00:00",
+      "soil_moisture_40": 0.3639,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 15:30:00",
+      "soil_moisture_40": 0.36284,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 16:00:00",
+      "soil_moisture_40": 0.36178,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 16:30:00",
+      "soil_moisture_40": 0.36073,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 17:00:00",
+      "soil_moisture_40": 0.35968,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 17:30:00",
+      "soil_moisture_40": 0.35863,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 18:00:00",
+      "soil_moisture_40": 0.35758,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 18:30:00",
+      "soil_moisture_40": 0.35654,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 19:00:00",
+      "soil_moisture_40": 0.3555,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 19:30:00",
+      "soil_moisture_40": 0.35446,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 20:00:00",
+      "soil_moisture_40": 0.35342,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 20:30:00",
+      "soil_moisture_40": 0.35239,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 21:00:00",
+      "soil_moisture_40": 0.35136,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 21:30:00",
+      "soil_moisture_40": 0.35033,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 22:00:00",
+      "soil_moisture_40": 0.3493,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 22:30:00",
+      "soil_moisture_40": 0.34828,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 23:00:00",
+      "soil_moisture_40": 0.34726,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-03 23:30:00",
+      "soil_moisture_40": 0.34624,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 00:00:00",
+      "soil_moisture_40": 0.34522,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 00:30:00",
+      "soil_moisture_40": 0.34421,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 01:00:00",
+      "soil_moisture_40": 0.3432,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 01:30:00",
+      "soil_moisture_40": 0.34219,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 02:00:00",
+      "soil_moisture_40": 0.34119,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 02:30:00",
+      "soil_moisture_40": 0.34018,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 03:00:00",
+      "soil_moisture_40": 0.33918,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 03:30:00",
+      "soil_moisture_40": 0.33819,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 04:00:00",
+      "soil_moisture_40": 0.33719,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 04:30:00",
+      "soil_moisture_40": 0.3362,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 05:00:00",
+      "soil_moisture_40": 0.33521,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 05:30:00",
+      "soil_moisture_40": 0.33422,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 06:00:00",
+      "soil_moisture_40": 0.33323,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 06:30:00",
+      "soil_moisture_40": 0.33225,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 07:00:00",
+      "soil_moisture_40": 0.33127,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 07:30:00",
+      "soil_moisture_40": 0.33029,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 08:00:00",
+      "soil_moisture_40": 0.32932,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 08:30:00",
+      "soil_moisture_40": 0.32834,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 09:00:00",
+      "soil_moisture_40": 0.32737,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 09:30:00",
+      "soil_moisture_40": 0.3264,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 10:00:00",
+      "soil_moisture_40": 0.32544,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 10:30:00",
+      "soil_moisture_40": 0.32447,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 11:00:00",
+      "soil_moisture_40": 0.32351,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 11:30:00",
+      "soil_moisture_40": 0.32255,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 12:00:00",
+      "soil_moisture_40": 0.3216,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 12:30:00",
+      "soil_moisture_40": 0.32064,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 13:00:00",
+      "soil_moisture_40": 0.31969,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 13:30:00",
+      "soil_moisture_40": 0.31874,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 14:00:00",
+      "soil_moisture_40": 0.3178,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 14:30:00",
+      "soil_moisture_40": 0.31685,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 15:00:00",
+      "soil_moisture_40": 0.31591,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 15:30:00",
+      "soil_moisture_40": 0.31497,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 16:00:00",
+      "soil_moisture_40": 0.31403,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 16:30:00",
+      "soil_moisture_40": 0.3131,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 17:00:00",
+      "soil_moisture_40": 0.31216,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 17:30:00",
+      "soil_moisture_40": 0.31123,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 18:00:00",
+      "soil_moisture_40": 0.3103,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 18:30:00",
+      "soil_moisture_40": 0.30938,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 19:00:00",
+      "soil_moisture_40": 0.30846,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 19:30:00",
+      "soil_moisture_40": 0.30753,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 20:00:00",
+      "soil_moisture_40": 0.30662,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 20:30:00",
+      "soil_moisture_40": 0.3057,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 21:00:00",
+      "soil_moisture_40": 0.30479,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 21:30:00",
+      "soil_moisture_40": 0.30387,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 22:00:00",
+      "soil_moisture_40": 0.30296,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 22:30:00",
+      "soil_moisture_40": 0.30206,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 23:00:00",
+      "soil_moisture_40": 0.30115,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-04 23:30:00",
+      "soil_moisture_40": 0.30025,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 00:00:00",
+      "soil_moisture_40": 0.29935,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 00:30:00",
+      "soil_moisture_40": 0.29845,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 01:00:00",
+      "soil_moisture_40": 0.29755,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 01:30:00",
+      "soil_moisture_40": 0.29666,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 02:00:00",
+      "soil_moisture_40": 0.29577,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 02:30:00",
+      "soil_moisture_40": 0.29488,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 03:00:00",
+      "soil_moisture_40": 0.29399,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 03:30:00",
+      "soil_moisture_40": 0.29311,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 04:00:00",
+      "soil_moisture_40": 0.29222,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 04:30:00",
+      "soil_moisture_40": 0.29134,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 05:00:00",
+      "soil_moisture_40": 0.29046,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 05:30:00",
+      "soil_moisture_40": 0.28959,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 06:00:00",
+      "soil_moisture_40": 0.28871,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 06:30:00",
+      "soil_moisture_40": 0.28784,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 07:00:00",
+      "soil_moisture_40": 0.28697,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 07:30:00",
+      "soil_moisture_40": 0.28611,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 08:00:00",
+      "soil_moisture_40": 0.28524,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 08:30:00",
+      "soil_moisture_40": 0.28438,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 09:00:00",
+      "soil_moisture_40": 0.28352,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 09:30:00",
+      "soil_moisture_40": 0.28266,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 10:00:00",
+      "soil_moisture_40": 0.2818,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 10:30:00",
+      "soil_moisture_40": 0.28095,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 11:00:00",
+      "soil_moisture_40": 0.28009,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 11:30:00",
+      "soil_moisture_40": 0.27924,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 12:00:00",
+      "soil_moisture_40": 0.33924,
+      "irrigation_volume_0": 10.0
+    },
+    {
+      "date": "2024-06-05 12:30:00",
+      "soil_moisture_40": 0.33825,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 13:00:00",
+      "soil_moisture_40": 0.33725,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 13:30:00",
+      "soil_moisture_40": 0.33626,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 14:00:00",
+      "soil_moisture_40": 0.33527,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 14:30:00",
+      "soil_moisture_40": 0.33428,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 15:00:00",
+      "soil_moisture_40": 0.33329,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 15:30:00",
+      "soil_moisture_40": 0.33231,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 16:00:00",
+      "soil_moisture_40": 0.33133,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 16:30:00",
+      "soil_moisture_40": 0.33035,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 17:00:00",
+      "soil_moisture_40": 0.32937,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 17:30:00",
+      "soil_moisture_40": 0.3284,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 18:00:00",
+      "soil_moisture_40": 0.32743,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 18:30:00",
+      "soil_moisture_40": 0.32646,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 19:00:00",
+      "soil_moisture_40": 0.32549,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 19:30:00",
+      "soil_moisture_40": 0.32453,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 20:00:00",
+      "soil_moisture_40": 0.32357,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 20:30:00",
+      "soil_moisture_40": 0.32261,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 21:00:00",
+      "soil_moisture_40": 0.32165,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 21:30:00",
+      "soil_moisture_40": 0.3207,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 22:00:00",
+      "soil_moisture_40": 0.31975,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 22:30:00",
+      "soil_moisture_40": 0.3188,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 23:00:00",
+      "soil_moisture_40": 0.31785,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-05 23:30:00",
+      "soil_moisture_40": 0.31691,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 00:00:00",
+      "soil_moisture_40": 0.31596,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 00:30:00",
+      "soil_moisture_40": 0.31502,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 01:00:00",
+      "soil_moisture_40": 0.31409,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 01:30:00",
+      "soil_moisture_40": 0.31315,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 02:00:00",
+      "soil_moisture_40": 0.31222,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 02:30:00",
+      "soil_moisture_40": 0.31129,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 03:00:00",
+      "soil_moisture_40": 0.31036,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 03:30:00",
+      "soil_moisture_40": 0.30943,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 04:00:00",
+      "soil_moisture_40": 0.30851,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 04:30:00",
+      "soil_moisture_40": 0.30759,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 05:00:00",
+      "soil_moisture_40": 0.30667,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 05:30:00",
+      "soil_moisture_40": 0.30575,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 06:00:00",
+      "soil_moisture_40": 0.30484,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 06:30:00",
+      "soil_moisture_40": 0.30393,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 07:00:00",
+      "soil_moisture_40": 0.30302,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 07:30:00",
+      "soil_moisture_40": 0.30211,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 08:00:00",
+      "soil_moisture_40": 0.3012,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 08:30:00",
+      "soil_moisture_40": 0.3003,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 09:00:00",
+      "soil_moisture_40": 0.2994,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 09:30:00",
+      "soil_moisture_40": 0.2985,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 10:00:00",
+      "soil_moisture_40": 0.29761,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 10:30:00",
+      "soil_moisture_40": 0.29671,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 11:00:00",
+      "soil_moisture_40": 0.29582,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 11:30:00",
+      "soil_moisture_40": 0.29493,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 12:00:00",
+      "soil_moisture_40": 0.29404,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 12:30:00",
+      "soil_moisture_40": 0.29316,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 13:00:00",
+      "soil_moisture_40": 0.29228,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 13:30:00",
+      "soil_moisture_40": 0.2914,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 14:00:00",
+      "soil_moisture_40": 0.29052,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 14:30:00",
+      "soil_moisture_40": 0.28964,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 15:00:00",
+      "soil_moisture_40": 0.28877,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 15:30:00",
+      "soil_moisture_40": 0.28789,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 16:00:00",
+      "soil_moisture_40": 0.28702,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 16:30:00",
+      "soil_moisture_40": 0.28616,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 17:00:00",
+      "soil_moisture_40": 0.28529,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 17:30:00",
+      "soil_moisture_40": 0.28443,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 18:00:00",
+      "soil_moisture_40": 0.28357,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 18:30:00",
+      "soil_moisture_40": 0.28271,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 19:00:00",
+      "soil_moisture_40": 0.28185,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 19:30:00",
+      "soil_moisture_40": 0.281,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 20:00:00",
+      "soil_moisture_40": 0.28014,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 20:30:00",
+      "soil_moisture_40": 0.27929,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 21:00:00",
+      "soil_moisture_40": 0.27845,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 21:30:00",
+      "soil_moisture_40": 0.2776,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 22:00:00",
+      "soil_moisture_40": 0.27676,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 22:30:00",
+      "soil_moisture_40": 0.27591,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 23:00:00",
+      "soil_moisture_40": 0.27507,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-06 23:30:00",
+      "soil_moisture_40": 0.27424,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 00:00:00",
+      "soil_moisture_40": 0.2734,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 00:30:00",
+      "soil_moisture_40": 0.27257,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 01:00:00",
+      "soil_moisture_40": 0.27174,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 01:30:00",
+      "soil_moisture_40": 0.27091,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 02:00:00",
+      "soil_moisture_40": 0.27008,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 02:30:00",
+      "soil_moisture_40": 0.26925,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 03:00:00",
+      "soil_moisture_40": 0.26843,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 03:30:00",
+      "soil_moisture_40": 0.26761,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 04:00:00",
+      "soil_moisture_40": 0.26679,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 04:30:00",
+      "soil_moisture_40": 0.26597,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 05:00:00",
+      "soil_moisture_40": 0.26516,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 05:30:00",
+      "soil_moisture_40": 0.26435,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 06:00:00",
+      "soil_moisture_40": 0.26354,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 06:30:00",
+      "soil_moisture_40": 0.26273,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 07:00:00",
+      "soil_moisture_40": 0.26192,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 07:30:00",
+      "soil_moisture_40": 0.26111,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 08:00:00",
+      "soil_moisture_40": 0.26031,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 08:30:00",
+      "soil_moisture_40": 0.25951,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 09:00:00",
+      "soil_moisture_40": 0.25871,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 09:30:00",
+      "soil_moisture_40": 0.25792,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 10:00:00",
+      "soil_moisture_40": 0.25712,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 10:30:00",
+      "soil_moisture_40": 0.25633,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 11:00:00",
+      "soil_moisture_40": 0.25554,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 11:30:00",
+      "soil_moisture_40": 0.25475,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 12:00:00",
+      "soil_moisture_40": 0.25396,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 12:30:00",
+      "soil_moisture_40": 0.25318,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 13:00:00",
+      "soil_moisture_40": 0.25239,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 13:30:00",
+      "soil_moisture_40": 0.25161,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 14:00:00",
+      "soil_moisture_40": 0.31161,
+      "irrigation_volume_0": 10.0
+    },
+    {
+      "date": "2024-06-07 14:30:00",
+      "soil_moisture_40": 0.31068,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 15:00:00",
+      "soil_moisture_40": 0.30976,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 15:30:00",
+      "soil_moisture_40": 0.30883,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 16:00:00",
+      "soil_moisture_40": 0.30791,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 16:30:00",
+      "soil_moisture_40": 0.30699,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 17:00:00",
+      "soil_moisture_40": 0.30607,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 17:30:00",
+      "soil_moisture_40": 0.30516,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 18:00:00",
+      "soil_moisture_40": 0.30425,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 18:30:00",
+      "soil_moisture_40": 0.30333,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 19:00:00",
+      "soil_moisture_40": 0.30243,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 19:30:00",
+      "soil_moisture_40": 0.30152,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 20:00:00",
+      "soil_moisture_40": 0.30062,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 20:30:00",
+      "soil_moisture_40": 0.29971,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 21:00:00",
+      "soil_moisture_40": 0.29882,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 21:30:00",
+      "soil_moisture_40": 0.29792,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 22:00:00",
+      "soil_moisture_40": 0.29702,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 22:30:00",
+      "soil_moisture_40": 0.29613,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 23:00:00",
+      "soil_moisture_40": 0.29524,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-07 23:30:00",
+      "soil_moisture_40": 0.29435,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 00:00:00",
+      "soil_moisture_40": 0.29347,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 00:30:00",
+      "soil_moisture_40": 0.29258,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 01:00:00",
+      "soil_moisture_40": 0.2917,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 01:30:00",
+      "soil_moisture_40": 0.29082,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 02:00:00",
+      "soil_moisture_40": 0.28995,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 02:30:00",
+      "soil_moisture_40": 0.28907,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 03:00:00",
+      "soil_moisture_40": 0.2882,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 03:30:00",
+      "soil_moisture_40": 0.28733,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 04:00:00",
+      "soil_moisture_40": 0.28646,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 04:30:00",
+      "soil_moisture_40": 0.28559,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 05:00:00",
+      "soil_moisture_40": 0.28473,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 05:30:00",
+      "soil_moisture_40": 0.28387,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 06:00:00",
+      "soil_moisture_40": 0.28301,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 06:30:00",
+      "soil_moisture_40": 0.28215,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 07:00:00",
+      "soil_moisture_40": 0.28129,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 07:30:00",
+      "soil_moisture_40": 0.28044,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 08:00:00",
+      "soil_moisture_40": 0.27959,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 08:30:00",
+      "soil_moisture_40": 0.27874,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 09:00:00",
+      "soil_moisture_40": 0.27789,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 09:30:00",
+      "soil_moisture_40": 0.27705,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 10:00:00",
+      "soil_moisture_40": 0.27621,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 10:30:00",
+      "soil_moisture_40": 0.27537,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 11:00:00",
+      "soil_moisture_40": 0.27453,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 11:30:00",
+      "soil_moisture_40": 0.27369,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 12:00:00",
+      "soil_moisture_40": 0.27286,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 12:30:00",
+      "soil_moisture_40": 0.27203,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 13:00:00",
+      "soil_moisture_40": 0.2712,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 13:30:00",
+      "soil_moisture_40": 0.27037,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 14:00:00",
+      "soil_moisture_40": 0.26954,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 14:30:00",
+      "soil_moisture_40": 0.26872,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 15:00:00",
+      "soil_moisture_40": 0.2679,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 15:30:00",
+      "soil_moisture_40": 0.26708,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 16:00:00",
+      "soil_moisture_40": 0.26626,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 16:30:00",
+      "soil_moisture_40": 0.26544,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 17:00:00",
+      "soil_moisture_40": 0.26463,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 17:30:00",
+      "soil_moisture_40": 0.26382,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 18:00:00",
+      "soil_moisture_40": 0.26301,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 18:30:00",
+      "soil_moisture_40": 0.2622,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 19:00:00",
+      "soil_moisture_40": 0.26139,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 19:30:00",
+      "soil_moisture_40": 0.26059,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 20:00:00",
+      "soil_moisture_40": 0.25979,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 20:30:00",
+      "soil_moisture_40": 0.25899,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 21:00:00",
+      "soil_moisture_40": 0.25819,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 21:30:00",
+      "soil_moisture_40": 0.2574,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 22:00:00",
+      "soil_moisture_40": 0.2566,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 22:30:00",
+      "soil_moisture_40": 0.25581,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 23:00:00",
+      "soil_moisture_40": 0.25502,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-08 23:30:00",
+      "soil_moisture_40": 0.25424,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 00:00:00",
+      "soil_moisture_40": 0.25345,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 00:30:00",
+      "soil_moisture_40": 0.25267,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 01:00:00",
+      "soil_moisture_40": 0.25188,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 01:30:00",
+      "soil_moisture_40": 0.2511,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 02:00:00",
+      "soil_moisture_40": 0.25033,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 02:30:00",
+      "soil_moisture_40": 0.24955,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 03:00:00",
+      "soil_moisture_40": 0.24878,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 03:30:00",
+      "soil_moisture_40": 0.24801,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 04:00:00",
+      "soil_moisture_40": 0.24724,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 04:30:00",
+      "soil_moisture_40": 0.24647,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 05:00:00",
+      "soil_moisture_40": 0.2457,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 05:30:00",
+      "soil_moisture_40": 0.24494,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 06:00:00",
+      "soil_moisture_40": 0.24417,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 06:30:00",
+      "soil_moisture_40": 0.24341,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 07:00:00",
+      "soil_moisture_40": 0.24266,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 07:30:00",
+      "soil_moisture_40": 0.2419,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 08:00:00",
+      "soil_moisture_40": 0.24114,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 08:30:00",
+      "soil_moisture_40": 0.24039,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 09:00:00",
+      "soil_moisture_40": 0.23964,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 09:30:00",
+      "soil_moisture_40": 0.23889,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 10:00:00",
+      "soil_moisture_40": 0.23814,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 10:30:00",
+      "soil_moisture_40": 0.2374,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 11:00:00",
+      "soil_moisture_40": 0.23666,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 11:30:00",
+      "soil_moisture_40": 0.23591,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 12:00:00",
+      "soil_moisture_40": 0.23517,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 12:30:00",
+      "soil_moisture_40": 0.23444,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 13:00:00",
+      "soil_moisture_40": 0.2337,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 13:30:00",
+      "soil_moisture_40": 0.23297,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 14:00:00",
+      "soil_moisture_40": 0.23223,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 14:30:00",
+      "soil_moisture_40": 0.2315,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 15:00:00",
+      "soil_moisture_40": 0.23077,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 15:30:00",
+      "soil_moisture_40": 0.23005,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 16:00:00",
+      "soil_moisture_40": 0.29005,
+      "irrigation_volume_0": 10.0
+    },
+    {
+      "date": "2024-06-09 16:30:00",
+      "soil_moisture_40": 0.28917,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 17:00:00",
+      "soil_moisture_40": 0.2883,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 17:30:00",
+      "soil_moisture_40": 0.28743,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 18:00:00",
+      "soil_moisture_40": 0.28656,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 18:30:00",
+      "soil_moisture_40": 0.28569,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 19:00:00",
+      "soil_moisture_40": 0.28483,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 19:30:00",
+      "soil_moisture_40": 0.28397,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 20:00:00",
+      "soil_moisture_40": 0.28311,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 20:30:00",
+      "soil_moisture_40": 0.28225,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 21:00:00",
+      "soil_moisture_40": 0.28139,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 21:30:00",
+      "soil_moisture_40": 0.28054,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 22:00:00",
+      "soil_moisture_40": 0.27969,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 22:30:00",
+      "soil_moisture_40": 0.27884,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 23:00:00",
+      "soil_moisture_40": 0.27799,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-09 23:30:00",
+      "soil_moisture_40": 0.27715,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 00:00:00",
+      "soil_moisture_40": 0.2763,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 00:30:00",
+      "soil_moisture_40": 0.27546,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 01:00:00",
+      "soil_moisture_40": 0.27462,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 01:30:00",
+      "soil_moisture_40": 0.27379,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 02:00:00",
+      "soil_moisture_40": 0.27295,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 02:30:00",
+      "soil_moisture_40": 0.27212,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 03:00:00",
+      "soil_moisture_40": 0.27129,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 03:30:00",
+      "soil_moisture_40": 0.27046,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 04:00:00",
+      "soil_moisture_40": 0.26964,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 04:30:00",
+      "soil_moisture_40": 0.26881,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 05:00:00",
+      "soil_moisture_40": 0.26799,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 05:30:00",
+      "soil_moisture_40": 0.26717,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 06:00:00",
+      "soil_moisture_40": 0.26635,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 06:30:00",
+      "soil_moisture_40": 0.26554,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 07:00:00",
+      "soil_moisture_40": 0.26472,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 07:30:00",
+      "soil_moisture_40": 0.26391,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 08:00:00",
+      "soil_moisture_40": 0.2631,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 08:30:00",
+      "soil_moisture_40": 0.26229,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 09:00:00",
+      "soil_moisture_40": 0.26149,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 09:30:00",
+      "soil_moisture_40": 0.26068,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 10:00:00",
+      "soil_moisture_40": 0.25988,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 10:30:00",
+      "soil_moisture_40": 0.25908,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 11:00:00",
+      "soil_moisture_40": 0.25829,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 11:30:00",
+      "soil_moisture_40": 0.25749,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 12:00:00",
+      "soil_moisture_40": 0.2567,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 12:30:00",
+      "soil_moisture_40": 0.2559,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 13:00:00",
+      "soil_moisture_40": 0.25511,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 13:30:00",
+      "soil_moisture_40": 0.25433,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 14:00:00",
+      "soil_moisture_40": 0.25354,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 14:30:00",
+      "soil_moisture_40": 0.25276,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 15:00:00",
+      "soil_moisture_40": 0.25197,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 15:30:00",
+      "soil_moisture_40": 0.25119,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 16:00:00",
+      "soil_moisture_40": 0.25042,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 16:30:00",
+      "soil_moisture_40": 0.24964,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 17:00:00",
+      "soil_moisture_40": 0.24887,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 17:30:00",
+      "soil_moisture_40": 0.24809,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 18:00:00",
+      "soil_moisture_40": 0.24732,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 18:30:00",
+      "soil_moisture_40": 0.24656,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 19:00:00",
+      "soil_moisture_40": 0.24579,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 19:30:00",
+      "soil_moisture_40": 0.24503,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 20:00:00",
+      "soil_moisture_40": 0.24426,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 20:30:00",
+      "soil_moisture_40": 0.2435,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 21:00:00",
+      "soil_moisture_40": 0.24274,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 21:30:00",
+      "soil_moisture_40": 0.24199,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 22:00:00",
+      "soil_moisture_40": 0.24123,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 22:30:00",
+      "soil_moisture_40": 0.24048,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 23:00:00",
+      "soil_moisture_40": 0.23973,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 23:30:00",
+      "soil_moisture_40": 0.23898,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 00:00:00",
+      "soil_moisture_40": 0.23823,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 00:30:00",
+      "soil_moisture_40": 0.23748,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 01:00:00",
+      "soil_moisture_40": 0.23674,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 01:30:00",
+      "soil_moisture_40": 0.236,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 02:00:00",
+      "soil_moisture_40": 0.23526,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 02:30:00",
+      "soil_moisture_40": 0.23452,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 03:00:00",
+      "soil_moisture_40": 0.23378,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 03:30:00",
+      "soil_moisture_40": 0.23305,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 04:00:00",
+      "soil_moisture_40": 0.23232,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 04:30:00",
+      "soil_moisture_40": 0.23159,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 05:00:00",
+      "soil_moisture_40": 0.23086,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 05:30:00",
+      "soil_moisture_40": 0.23013,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 06:00:00",
+      "soil_moisture_40": 0.22941,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 06:30:00",
+      "soil_moisture_40": 0.22868,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 07:00:00",
+      "soil_moisture_40": 0.22796,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 07:30:00",
+      "soil_moisture_40": 0.22724,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 08:00:00",
+      "soil_moisture_40": 0.22652,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 08:30:00",
+      "soil_moisture_40": 0.22581,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 09:00:00",
+      "soil_moisture_40": 0.22509,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 09:30:00",
+      "soil_moisture_40": 0.22438,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 10:00:00",
+      "soil_moisture_40": 0.22367,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 10:30:00",
+      "soil_moisture_40": 0.22296,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 11:00:00",
+      "soil_moisture_40": 0.22225,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 11:30:00",
+      "soil_moisture_40": 0.22155,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 12:00:00",
+      "soil_moisture_40": 0.22084,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 12:30:00",
+      "soil_moisture_40": 0.22014,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 13:00:00",
+      "soil_moisture_40": 0.21944,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 13:30:00",
+      "soil_moisture_40": 0.21874,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 14:00:00",
+      "soil_moisture_40": 0.21804,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 14:30:00",
+      "soil_moisture_40": 0.21735,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 15:00:00",
+      "soil_moisture_40": 0.21666,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 15:30:00",
+      "soil_moisture_40": 0.21596,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 16:00:00",
+      "soil_moisture_40": 0.21527,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 16:30:00",
+      "soil_moisture_40": 0.21459,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 17:00:00",
+      "soil_moisture_40": 0.2139,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 17:30:00",
+      "soil_moisture_40": 0.21321,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 18:00:00",
+      "soil_moisture_40": 0.27321,
+      "irrigation_volume_0": 10.0
+    },
+    {
+      "date": "2024-06-11 18:30:00",
+      "soil_moisture_40": 0.27238,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 19:00:00",
+      "soil_moisture_40": 0.27155,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 19:30:00",
+      "soil_moisture_40": 0.27072,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 20:00:00",
+      "soil_moisture_40": 0.26989,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 20:30:00",
+      "soil_moisture_40": 0.26907,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 21:00:00",
+      "soil_moisture_40": 0.26825,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 21:30:00",
+      "soil_moisture_40": 0.26743,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 22:00:00",
+      "soil_moisture_40": 0.26661,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 22:30:00",
+      "soil_moisture_40": 0.26579,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 23:00:00",
+      "soil_moisture_40": 0.26498,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-11 23:30:00",
+      "soil_moisture_40": 0.26416,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 00:00:00",
+      "soil_moisture_40": 0.26335,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 00:30:00",
+      "soil_moisture_40": 0.26255,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 01:00:00",
+      "soil_moisture_40": 0.26174,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 01:30:00",
+      "soil_moisture_40": 0.26094,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 02:00:00",
+      "soil_moisture_40": 0.26013,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 02:30:00",
+      "soil_moisture_40": 0.25933,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 03:00:00",
+      "soil_moisture_40": 0.25853,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-12 03:30:00",
+      "soil_moisture_40": 0.25774,
+      "irrigation_volume_0": 0.0
+    }
+  ]
+}

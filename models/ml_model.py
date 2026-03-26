@@ -145,9 +145,10 @@ class MLModel():
         df : pd.DataFrame
             A DataFrame that must contain at least soil_moisture_40 and its associated timestamps (`[soil_moisture_40, date]`)
         save_model : bool, optional
-            Whether to save the trained model or not. It will be saved in `models/weights/MLModel.joblib`. (Default is `False`)
+            If True, persiste el regresor en disco. (Default is `False`)
         model_name : str, optional
-            The name you want to save the model with. (Default is 'MLModel')
+            Nombre base sin extensión; el archivo se escribe como ``models/weights/{model_name}.joblib``.
+            (Default is 'MLModel')
         """
         self._check_dataframe(df)
         

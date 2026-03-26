@@ -90,13 +90,37 @@ ngrok http 8000
 | Método | Ruta      | Descripción                |
 |--------|-----------|----------------------------|
 | GET    | /health   | Comprueba que el servicio está activo |
-| GET    | /sensors/{sensor_id}/weights | Indica si el sensor tiene pesos entrenados |
-| POST   | /train   | Entrena el modelo Linear con datos históricos del sensor |
+| GET    | /sensors/{sensor_id}/weights | Estado de pesos Linear y ML (rutas y última versión ML) |
+| POST   | /train   | Entrena Linear o ML y guarda `sensor_{id}.joblib` o `ml_sensor_{id}_{fecha}.joblib` |
 | POST   | /predict  | Recibe datos y devuelve predicciones y capacitancias |
 
-### POST /train (modelo Linear)
+### GET /sensors/{sensor_id}/weights
 
-Entrena el modelo Linear con datos históricos y guarda los pesos en `models/weights/sensor_{sensor_id}.joblib`. Requiere al menos 500 puntos con ciclos de riego-secado.
+Devuelve el estado de los artefactos guardados por sensor, sin duplicar rutas:
+
+- **Linear:** `models/weights/sensor_{sensor_id}.joblib`
+- **ML:** archivos versionados por fecha en UTC: `models/weights/ml_sensor_{sensor_id}_{YYYYMMDD}_{HHMMSS}.joblib`. En predicción se carga siempre el más reciente (por orden del sufijo en el nombre).
+
+Ejemplo de cuerpo de respuesta:
+
+```json
+{
+  "sensor_id": "1082",
+  "linear": { "has_weights": true, "path": "models/weights/sensor_1082.joblib" },
+  "ml": {
+    "has_weights": true,
+    "latest_path": "models/weights/ml_sensor_1082_20260211_143052.joblib",
+    "all_paths": ["models/weights/ml_sensor_1082_20260211_143052.joblib"]
+  }
+}
+```
+
+Si no hay pesos ML: `has_weights: false`, `latest_path: null`, `all_paths: []`.
+
+### POST /train (Linear o ML)
+
+- **Linear:** guarda en `models/weights/sensor_{sensor_id}.joblib`. Requiere al menos **500** puntos y ciclos de riego-secado (al menos un punto con `irrigation_volume_0 == 0`).
+- **ML:** guarda un archivo nuevo por cada entrenamiento con marca temporal **UTC** en el nombre: `ml_sensor_{sensor_id}_{YYYYMMDD}_{HHMMSS}.joblib`. Requiere también **500** puntos mínimo y la misma regla de riego-secado. La respuesta incluye el campo `path` del archivo creado.
 
 ```json
 {
@@ -104,11 +128,12 @@ Entrena el modelo Linear con datos históricos y guarda los pesos en `models/wei
   "model": "Linear",
   "data": [
     {"date": "2024-01-15 08:00:00", "soil_moisture_40": 0.35, "irrigation_volume_0": 10},
-    {"date": "2024-01-15 08:30:00", "soil_moisture_40": 0.34, "irrigation_volume_0": 0},
-    ...
+    {"date": "2024-01-15 08:30:00", "soil_moisture_40": 0.34, "irrigation_volume_0": 0}
   ]
 }
 ```
+
+Para ML, usa `"model": "ML"` con el mismo formato de `data` (mínimo 500 filas).
 
 ### POST /predict
 
@@ -126,10 +151,16 @@ Entrena el modelo Linear con datos históricos y guarda los pesos en `models/wei
 ```
 
 - `data`: array de puntos con `date`, `soil_moisture_40`, `irrigation_volume_0` (obligatorios).
-- `model`: `"ML"` o `"Linear"` (por defecto `"ML"`). Con Linear, los pesos se cargan de `models/weights/sensor_{sensor_id}.joblib`.
-- `sensor_id`: obligatorio cuando `model` es `"Linear"`. Si el sensor no tiene pesos entrenados, la API devuelve 503 con el mensaje correspondiente.
-- `previous_points`: puntos previos para la predicción (por defecto 10, mínimo 3).
+- `model`: `"ML"` o `"Linear"` (por defecto `"ML"`).
+- **Linear:** carga `models/weights/sensor_{sensor_id}.joblib`. Sin archivo, respuesta **503** con instrucciones para entrenar.
+- **ML:** carga el `.joblib` ML **más reciente** para ese `sensor_id`. El modelo **no** se reentrena en cada petición; primero debe existir un entrenamiento vía `POST /train` con `"model": "ML"`. Sin artefactos, **503** con el patrón esperado `models/weights/ml_sensor_{sensor_id}_*.joblib`.
+- `sensor_id`: obligatorio para **Linear** y **ML**.
+- `previous_points`: puntos previos para la predicción (por defecto 10, mínimo **3**). Los **500** puntos son solo el mínimo recomendado para **entrenar** ML/Linear.
 - `predict_steps`: pasos futuros a predecir (por defecto 100).
+
+### Respuesta de POST /predict
+
+- `prediction_dates`: lista con la **misma longitud** que `predictions`. Cada elemento es el instante asignado a `predictions[i]`: anclado a la **última fecha** de `dates` (último punto de contexto) + **30 minutos** × (i + 1), coherente con la resolución temporal de `predict_steps` en los modelos Linear y ML.
 
 ### Ejemplo de respuesta
 
@@ -137,8 +168,10 @@ Entrena el modelo Linear con datos históricos y guarda los pesos en `models/wei
 {
   "previous_values": [0.32, 0.30, ...],
   "predictions": [0.28, 0.27, ...],
+  "prediction_dates": ["2024-06-06 13:00:00", "2024-06-06 13:30:00", "..."],
   "capacitances": [{"date": "2024-06-08T10:00:00", "value": 0.25}, ...],
-  "dates": ["2024-06-06 12:00:00", "2024-06-06 12:30:00", ...]
+  "dates": ["2024-06-06 12:00:00", "2024-06-06 12:30:00", ...],
+  "ccpmp": 0.27
 }
 ```
 
@@ -220,5 +253,5 @@ También se requiere `irrigation_volume_0` para la lógica de riego y detección
 
 ## Modelos disponibles
 
-- **ML:** XGBRegressor, entrena rápido, predice en bloques de 3 pasos (90 min).
+- **ML:** XGBRegressor; en la API, el entrenamiento persistente va a ficheros `ml_sensor_{id}_{UTC}.joblib` y la predicción carga el último por fecha en el nombre.
 - **Linear:** Regresión lineal (RANSAC) + detector de mesetas (XGBClassifier). Entrena más lento; se recomienda entrenar una vez y cargar el modelo guardado.

@@ -1,0 +1,108 @@
+{
+  "data": [
+    {
+      "date": "2024-06-10 06:00:00",
+      "soil_moisture_40": 0.38,
+      "irrigation_volume_0": 12.0
+    },
+    {
+      "date": "2024-06-10 06:30:00",
+      "soil_moisture_40": 0.36704,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 07:00:00",
+      "soil_moisture_40": 0.3641,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 07:30:00",
+      "soil_moisture_40": 0.36119,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 08:00:00",
+      "soil_moisture_40": 0.3583,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 08:30:00",
+      "soil_moisture_40": 0.35543,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 09:00:00",
+      "soil_moisture_40": 0.35259,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 09:30:00",
+      "soil_moisture_40": 0.34977,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 10:00:00",
+      "soil_moisture_40": 0.34697,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 10:30:00",
+      "soil_moisture_40": 0.3442,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 11:00:00",
+      "soil_moisture_40": 0.34144,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 11:30:00",
+      "soil_moisture_40": 0.33871,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 12:00:00",
+      "soil_moisture_40": 0.336,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 12:30:00",
+      "soil_moisture_40": 0.33331,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 13:00:00",
+      "soil_moisture_40": 0.33065,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 13:30:00",
+      "soil_moisture_40": 0.328,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 14:00:00",
+      "soil_moisture_40": 0.32538,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 14:30:00",
+      "soil_moisture_40": 0.32278,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 15:00:00",
+      "soil_moisture_40": 0.32019,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2024-06-10 15:30:00",
+      "soil_moisture_40": 0.31763,
+      "irrigation_volume_0": 0.0
+    }
+  ],
+  "model": "Linear",
+  "sensor_id": "1082",
+  "previous_points": 10,
+  "predict_steps": 48
+}
