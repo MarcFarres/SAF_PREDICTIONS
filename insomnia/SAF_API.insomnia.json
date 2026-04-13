@@ -16,7 +16,7 @@
       "parentId": "wrk_saf_api",
       "name": "ngrok",
       "data": {
-        "base_url": "https://f26d-54-73-118-61.ngrok-free.app"
+        "base_url": "https://2d71-54-73-118-61.ngrok-free.app"
       },
       "dataPropertyOrder": {
         "&": [

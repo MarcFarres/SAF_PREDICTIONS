@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent
 PAYLOADS = ROOT / "payloads"
 EXPORT_PATH = ROOT / "SAF_API.insomnia.json"
 
-BASE_URL = "https://f26d-54-73-118-61.ngrok-free.app"
+BASE_URL = "https://2d71-54-73-118-61.ngrok-free.app"
 
 NGROK_HEADERS = [
     {"id": "h_ngrok", "name": "ngrok-skip-browser-warning", "value": "true"},
