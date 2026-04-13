@@ -21,6 +21,12 @@ NGROK_HEADERS = [
     {"id": "h_ngrok", "name": "ngrok-skip-browser-warning", "value": "true"},
 ]
 
+# Sin esto, algunas versiones de Insomnia envían el cuerpo como texto y FastAPI
+# recibe un str → error Pydantic "Input should be a valid dictionary..."
+JSON_HEADERS = [
+    {"id": "h_content_json", "name": "Content-Type", "value": "application/json; charset=utf-8"},
+] + NGROK_HEADERS
+
 
 def load_payload(name: str) -> str:
     return (PAYLOADS / name).read_text(encoding="utf-8")
@@ -36,8 +42,10 @@ def req(
     sort_key: float = 0,
 ) -> dict:
     body: dict = {}
+    headers = NGROK_HEADERS
     if body_text is not None:
         body = {"mimeType": "application/json", "text": body_text}
+        headers = JSON_HEADERS
     return {
         "_id": _id,
         "parentId": parent,
@@ -45,7 +53,7 @@ def req(
         "name": name,
         "method": method,
         "url": "{{ _.base_url }}" + path,
-        "headers": NGROK_HEADERS,
+        "headers": headers,
         "body": body,
         "parameters": [],
         "authentication": {},

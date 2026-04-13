@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2026-03-26T10:02:11.000Z",
+  "__export_date": "2026-03-26T10:13:24.000Z",
   "__export_source": "insomnia.desktop.app",
   "resources": [
     {
@@ -97,6 +97,11 @@
       "url": "{{ _.base_url }}/train",
       "headers": [
         {
+          "id": "h_content_json",
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
           "id": "h_ngrok",
           "name": "ngrok-skip-browser-warning",
           "value": "true"
@@ -125,6 +130,11 @@
       "method": "POST",
       "url": "{{ _.base_url }}/train",
       "headers": [
+        {
+          "id": "h_content_json",
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
         {
           "id": "h_ngrok",
           "name": "ngrok-skip-browser-warning",
@@ -155,6 +165,11 @@
       "url": "{{ _.base_url }}/predict",
       "headers": [
         {
+          "id": "h_content_json",
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
           "id": "h_ngrok",
           "name": "ngrok-skip-browser-warning",
           "value": "true"
@@ -183,6 +198,11 @@
       "method": "POST",
       "url": "{{ _.base_url }}/predict",
       "headers": [
+        {
+          "id": "h_content_json",
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
         {
           "id": "h_ngrok",
           "name": "ngrok-skip-browser-warning",

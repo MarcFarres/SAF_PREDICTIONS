@@ -17,7 +17,7 @@
 | `05 POST /predict (ML)` | Requiere haber ejecutado antes el train ML del mismo `sensor_id`. |
 | `06 POST /predict (Linear)` | Requiere train Linear previo. |
 
-Todas las peticiones llevan la cabecera `ngrok-skip-browser-warning: true` para reducir avisos en el túnel gratuito.
+Todas las peticiones llevan la cabecera `ngrok-skip-browser-warning: true` para reducir avisos en el túnel gratuito. Los **POST** incluyen además `Content-Type: application/json`; si al pegar el body usas el modo **Text** en lugar de **JSON**, FastAPI puede responder *Input should be a valid dictionary* porque el cuerpo llega como texto plano. En ese caso, cambia el body a tipo **JSON** o añade la cabecera `Content-Type: application/json`.
 
 ## Regenerar cuerpos JSON
 
