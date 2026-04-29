@@ -16,6 +16,7 @@
 | `04 POST /train (Linear)` | Mismos datos; crea `sensor_1082.joblib`. |
 | `05 POST /predict (ML)` | Requiere haber ejecutado antes el train ML del mismo `sensor_id`. |
 | `06 POST /predict (Linear)` | Requiere train Linear previo. |
+| `07 POST /predict (ML, 3 pts integración PHP)` | Misma forma que el backend PHP: **3** filas en `data`, `previous_points: 3`, `predict_steps: 100`, todo con `irrigation_volume_0: 0`. Edita `sensor_id` y humedades en `payloads/predict_ml_3pts_integration.json` (o en el body de la petición) y regenera el export si quieres versionarlo en git. |
 
 Todas las peticiones llevan la cabecera `ngrok-skip-browser-warning: true` para reducir avisos en el túnel gratuito. Los **POST** incluyen además `Content-Type: application/json`; si al pegar el body usas el modo **Text** en lugar de **JSON**, FastAPI puede responder *Input should be a valid dictionary* porque el cuerpo llega como texto plano. En ese caso, cambia el body a tipo **JSON** o añade la cabecera `Content-Type: application/json`.
 

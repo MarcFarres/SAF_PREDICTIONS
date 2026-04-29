@@ -5,18 +5,28 @@ Permite enviar datos por JSON y recibir predicciones y capacitancias.
 """
 
 import os
+import tempfile
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+from dotenv import load_dotenv
+
+# Carga .env junto a este fichero (no hace falta repetir variables en cada terminal).
+load_dotenv(Path(__file__).resolve().parent / ".env")
+
 import pandas as pd
+from botocore.exceptions import ClientError
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from models import LinearModel, MLModel, CapacitanceDetector
+import weights_storage
 
 # Caché de modelos Linear por sensor
 _linear_model_cache: Dict[str, LinearModel] = {}
-# Caché ML: sensor_id -> (ruta del .joblib cargada, modelo)
+# Caché ML: sensor_id -> (clave S3 del .joblib cargado, modelo)
 _ml_model_cache: Dict[str, Tuple[str, MLModel]] = {}
 
 # Mínimo de puntos para entrenar Linear o ML (histórico)
@@ -26,11 +36,18 @@ MIN_ML_TRAIN_POINTS = 500
 # Resolución entre valores consecutivos en `predictions` (alineada con `predict_steps` en Linear y ML).
 PREDICTION_STEP_MINUTES = 30
 
-WEIGHTS_DIR = "models/weights"
+
+def _s3_http_error(exc: ClientError) -> HTTPException:
+    code = exc.response.get("Error", {}).get("Code", "Unknown")
+    return HTTPException(
+        status_code=503,
+        detail=f"Error al acceder al almacenamiento de pesos (S3): {code}",
+    )
 
 
 def get_weights_path(sensor_id: str) -> str:
-    return f"{WEIGHTS_DIR}/sensor_{sensor_id}.joblib"
+    """Clave de objeto S3 para el modelo Linear del sensor (mismo formato lógico que antes: prefix/sensor_id.joblib)."""
+    return weights_storage.linear_object_key(sensor_id)
 
 
 def build_ml_model_name(sensor_id: str) -> str:
@@ -40,17 +57,11 @@ def build_ml_model_name(sensor_id: str) -> str:
 
 
 def list_ml_weights_paths(sensor_id: str) -> List[str]:
-    """Rutas absolutas relativas al cwd, más reciente primero (orden lexicográfico del sufijo)."""
-    if not os.path.isdir(WEIGHTS_DIR):
-        return []
-    prefix = f"ml_sensor_{sensor_id}_"
-    names = [
-        n
-        for n in os.listdir(WEIGHTS_DIR)
-        if n.startswith(prefix) and n.endswith(".joblib")
-    ]
-    names.sort(reverse=True)
-    return [os.path.join(WEIGHTS_DIR, n) for n in names]
+    """Claves S3 de artefactos ML del sensor, más reciente primero (orden lexicográfico del sufijo)."""
+    try:
+        return weights_storage.list_ml_object_keys(sensor_id)
+    except ClientError as e:
+        raise _s3_http_error(e) from e
 
 
 def get_latest_ml_weights_path(sensor_id: str) -> Optional[str]:
@@ -58,14 +69,24 @@ def get_latest_ml_weights_path(sensor_id: str) -> Optional[str]:
     return paths[0] if paths else None
 
 
-def get_cached_ml_model(sensor_id: str, weights_path: str) -> MLModel:
-    """Carga o reutiliza desde caché el modelo ML desde `weights_path` (ruta al .joblib más reciente)."""
+def get_cached_ml_model(sensor_id: str, weights_object_key: str) -> MLModel:
+    """Carga o reutiliza desde caché el modelo ML descargando el .joblib desde S3 si hace falta."""
     cached = _ml_model_cache.get(sensor_id)
-    if cached is None or cached[0] != weights_path:
-        os.makedirs(WEIGHTS_DIR, exist_ok=True)
-        model = MLModel()
-        model.load_model(weights_path)
-        _ml_model_cache[sensor_id] = (weights_path, model)
+    if cached is None or cached[0] != weights_object_key:
+        tmp: Optional[str] = None
+        try:
+            tmp = weights_storage.download_to_tempfile(weights_object_key)
+            model = MLModel()
+            model.load_model(tmp)
+        except ClientError as e:
+            raise _s3_http_error(e) from e
+        finally:
+            if tmp:
+                try:
+                    os.unlink(tmp)
+                except OSError:
+                    pass
+        _ml_model_cache[sensor_id] = (weights_object_key, model)
     return _ml_model_cache[sensor_id][1]
 
 
@@ -77,7 +98,29 @@ def build_prediction_dates(anchor: pd.Timestamp, n: int) -> List[str]:
     return [str(anchor + step * (i + 1)) for i in range(n)]
 
 
-app = FastAPI(title="SAF API", description="API de predicción de humedad del suelo")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    if weights_storage.skip_startup_validation():
+        print(
+            "SAF: aviso — no se validó S3 al arrancar (S3_SKIP_STARTUP_VALIDATION). "
+            "/train y /predict pueden fallar si el bucket o credenciales no son correctos.",
+            flush=True,
+        )
+    else:
+        weights_storage.validate_bucket_access()
+        print(
+            f"SAF: almacén de pesos S3 accesible "
+            f"(bucket={weights_storage.bucket_name()}, región={weights_storage.region_name()})",
+            flush=True,
+        )
+    yield
+
+
+app = FastAPI(
+    title="SAF API",
+    description="API de predicción de humedad del suelo",
+    lifespan=lifespan,
+)
 
 
 class DataPoint(BaseModel):
@@ -163,14 +206,19 @@ def health():
 def get_weights_status(sensor_id: str):
     """
     Estado de pesos entrenados por sensor: Linear (sensor_{id}.joblib) y ML (ml_sensor_{id}_*.joblib).
+    Los ficheros residen en S3; path es la clave de objeto (mismo formato lógico que en despliegues anteriores).
     """
-    linear_path = get_weights_path(sensor_id)
-    linear_exists = os.path.exists(linear_path)
-    ml_paths = list_ml_weights_paths(sensor_id)
+    try:
+        linear_path = get_weights_path(sensor_id)
+        linear_exists = weights_storage.object_exists(linear_path)
+        ml_paths = list_ml_weights_paths(sensor_id)
+    except ClientError as e:
+        raise _s3_http_error(e) from e
     latest_ml = ml_paths[0] if ml_paths else None
 
     return {
         "sensor_id": sensor_id,
+        "storage": {"backend": "s3", "bucket": weights_storage.bucket_name()},
         "linear": {
             "has_weights": linear_exists,
             "path": linear_path if linear_exists else None,
@@ -186,7 +234,7 @@ def get_weights_status(sensor_id: str):
 @app.post("/train")
 def train(request: TrainRequest):
     """
-    Entrena Linear o ML con datos históricos y guarda pesos bajo models/weights/.
+    Entrena Linear o ML con datos históricos y sube los .joblib al bucket S3 configurado.
     """
     if request.model not in ("Linear", "ML"):
         raise HTTPException(
@@ -206,57 +254,87 @@ def train(request: TrainRequest):
     df = _train_dataframe_from_request(request)
 
     if request.model == "Linear":
-        try:
-            model = LinearModel()
-            model.train_plain_model(
-                df.copy(),
-                save_model=True,
-                model_name=f"sensor_{request.sensor_id}",
-            )
-        except (ValueError, KeyError) as e:
-            raise HTTPException(
-                status_code=400,
-                detail=f"Datos insuficientes o formato incorrecto para entrenar: {str(e)}",
-            )
-        except Exception as e:
-            raise HTTPException(
-                status_code=500,
-                detail=f"Error durante el entrenamiento: {str(e)}",
-            )
-        _linear_model_cache.pop(request.sensor_id, None)
         weights_path = get_weights_path(request.sensor_id)
+        tmp = tempfile.NamedTemporaryFile(suffix=".joblib", delete=False)
+        tmp_path = tmp.name
+        tmp.close()
+        try:
+            try:
+                model = LinearModel()
+                model.train_plain_model(
+                    df.copy(),
+                    save_model=True,
+                    model_name=f"sensor_{request.sensor_id}",
+                    output_path=tmp_path,
+                )
+            except HTTPException:
+                raise
+            except (ValueError, KeyError) as e:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Datos insuficientes o formato incorrecto para entrenar: {str(e)}",
+                )
+            except Exception as e:
+                raise HTTPException(
+                    status_code=500,
+                    detail=f"Error durante el entrenamiento: {str(e)}",
+                )
+            try:
+                weights_storage.upload_file(tmp_path, weights_path)
+            except ClientError as e:
+                raise _s3_http_error(e) from e
+        finally:
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
+        _linear_model_cache.pop(request.sensor_id, None)
         return {
             "status": "ok",
             "sensor_id": request.sensor_id,
             "model": "Linear",
             "path": weights_path,
-            "message": f"Modelo Linear guardado en {weights_path}",
+            "message": f"Modelo Linear guardado en s3://{weights_storage.bucket_name()}/{weights_path}",
         }
 
     # ML
-    os.makedirs(WEIGHTS_DIR, exist_ok=True)
     model_name = build_ml_model_name(request.sensor_id)
+    weights_path = weights_storage.ml_object_key(model_name)
+    tmp = tempfile.NamedTemporaryFile(suffix=".joblib", delete=False)
+    tmp_path = tmp.name
+    tmp.close()
     try:
-        ml = MLModel()
-        ml.train(df.copy(), save_model=True, model_name=model_name)
-    except (ValueError, KeyError) as e:
-        raise HTTPException(
-            status_code=400,
-            detail=f"Datos insuficientes para entrenar ML (pocas filas de decay): {str(e)}",
-        )
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Error durante el entrenamiento ML: {str(e)}",
-        )
-    weights_path = f"{WEIGHTS_DIR}/{model_name}.joblib"
+        try:
+            ml = MLModel()
+            ml.train(df.copy(), save_model=True, model_name=model_name, output_path=tmp_path)
+        except HTTPException:
+            raise
+        except (ValueError, KeyError) as e:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Datos insuficientes para entrenar ML (pocas filas de decay): {str(e)}",
+            )
+        except Exception as e:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Error durante el entrenamiento ML: {str(e)}",
+            )
+        try:
+            weights_storage.upload_file(tmp_path, weights_path)
+        except ClientError as e:
+            raise _s3_http_error(e) from e
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
     _ml_model_cache.pop(request.sensor_id, None)
     return {
         "status": "ok",
         "sensor_id": request.sensor_id,
         "model": "ML",
         "path": weights_path,
-        "message": f"Modelo ML guardado en {weights_path}",
+        "message": f"Modelo ML guardado en s3://{weights_storage.bucket_name()}/{weights_path}",
     }
 
 
@@ -309,19 +387,33 @@ def predict(request: PredictRequest):
                 detail="sensor_id es obligatorio cuando se usa el modelo Linear",
             )
         model_path = get_weights_path(sensor_id)
-        if not os.path.exists(model_path):
+        try:
+            has_linear = weights_storage.object_exists(model_path)
+        except ClientError as e:
+            raise _s3_http_error(e) from e
+        if not has_linear:
             raise HTTPException(
                 status_code=503,
                 detail=(
                     f"El sensor {sensor_id} no tiene archivo de pesos Linear. "
                     f"Entrena con POST /train (model: \"Linear\", mínimo {MIN_TRAIN_POINTS} puntos). "
-                    f"Ruta esperada: {model_path}"
+                    f"Clave S3 esperada: {model_path}"
                 ),
             )
         if sensor_id not in _linear_model_cache:
-            os.makedirs(WEIGHTS_DIR, exist_ok=True)
-            model = LinearModel()
-            model.load_plain_model(model_path)
+            tmp: Optional[str] = None
+            try:
+                tmp = weights_storage.download_to_tempfile(model_path)
+                model = LinearModel()
+                model.load_plain_model(tmp)
+            except ClientError as e:
+                raise _s3_http_error(e) from e
+            finally:
+                if tmp:
+                    try:
+                        os.unlink(tmp)
+                    except OSError:
+                        pass
             _linear_model_cache[sensor_id] = model
         model = _linear_model_cache[sensor_id]
     elif request.model == "ML":
@@ -339,7 +431,7 @@ def predict(request: PredictRequest):
                     f"El sensor {sensor_id} no tiene modelo ML entrenado. "
                     f"Entrena con POST /train enviando JSON con \"sensor_id\", \"model\": \"ML\" y \"data\" "
                     f"(mínimo {MIN_ML_TRAIN_POINTS} puntos con ciclos de riego-secado). "
-                    f"Se creará un archivo bajo {WEIGHTS_DIR}/ml_sensor_{sensor_id}_YYYYMMDD_HHMMSS.joblib (UTC)."
+                    f"Se creará un objeto bajo {weights_storage.weights_prefix()}/ml_sensor_{sensor_id}_YYYYMMDD_HHMMSS.joblib (UTC) en S3."
                 ),
             )
         model = get_cached_ml_model(sensor_id, latest)

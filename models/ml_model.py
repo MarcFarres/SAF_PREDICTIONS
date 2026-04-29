@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 import os
 import logging
-from typing import List, Union, Tuple
+from typing import List, Union, Tuple, Optional
 from scipy.ndimage import gaussian_filter1d
 from sklearn.metrics import mean_absolute_error
 
@@ -136,7 +136,7 @@ class MLModel():
         
         raise TypeError(f"Expected XGBRegressor, got {type(regressor).__name__}")
    
-    def train(self, df : pd.DataFrame, save_model : bool = False, model_name : str = "MLModel"):
+    def train(self, df : pd.DataFrame, save_model : bool = False, model_name : str = "MLModel", output_path : Optional[str] = None):
         """
         Trains the model with the given dataframe.
         
@@ -147,8 +147,11 @@ class MLModel():
         save_model : bool, optional
             If True, persiste el regresor en disco. (Default is `False`)
         model_name : str, optional
-            Nombre base sin extensión; el archivo se escribe como ``models/weights/{model_name}.joblib``.
+            Nombre base sin extensión; el archivo se escribe como ``models/weights/{model_name}.joblib``
+            salvo que se indique ``output_path``.
             (Default is 'MLModel')
+        output_path : str, optional
+            Ruta completa del fichero .joblib. Si se indica, se usa en lugar de ``models/weights/{model_name}.joblib``.
         """
         self._check_dataframe(df)
         
@@ -166,8 +169,11 @@ class MLModel():
         train_error = mean_absolute_error(y_train, train_pred)
         
         if save_model:
-            os.makedirs("models/weights", exist_ok=True)
-            joblib.dump(self.regressor, f"models/weights/{model_name}.joblib")
+            path = output_path if output_path else f"models/weights/{model_name}.joblib"
+            out_dir = os.path.dirname(os.path.abspath(path))
+            if out_dir:
+                os.makedirs(out_dir, exist_ok=True)
+            joblib.dump(self.regressor, path)
         
         logger.info(f"Trained with training error : {train_error}")
         

@@ -154,6 +154,15 @@ def main() -> None:
             load_payload("predict_linear.json"),
             -500,
         ),
+        req(
+            "req_predict_ml_3pts",
+            fld,
+            "07 POST /predict (ML, 3 pts integración PHP)",
+            "POST",
+            "/predict",
+            load_payload("predict_ml_3pts_integration.json"),
+            -400,
+        ),
     ]
 
     export = {

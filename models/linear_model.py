@@ -7,7 +7,7 @@ import numpy as np
 import optuna
 import os
 import logging
-from typing import List, Union
+from typing import List, Union, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -103,7 +103,7 @@ class LinearModel():
         final_model.fit(X, y)
         return final_model
         
-    def train_plain_model(self, df : pd.DataFrame, save_model : bool = False, model_name : str = "XGBoost_plain_classifier"):
+    def train_plain_model(self, df : pd.DataFrame, save_model : bool = False, model_name : str = "XGBoost_plain_classifier", output_path : Optional[str] = None):
         """
         Trains the plain detector model with the given dataframe.
         
@@ -112,9 +112,11 @@ class LinearModel():
         df : pd.DataFrame
             A DataFrame that must contain at least soil_moisture_40 and its associated timestamps (`[soil_moisture_40, date]`)
         save_model : bool, optional
-            Whether to save the trained model or not. It will be saved in `models/weights/XGBoost_plain_classifier.joblib`. (Default is `False`)
+            Whether to save the trained model or not. It will be saved in `models/weights/` unless ``output_path`` is set. (Default is `False`)
         model_name : str, optional
             The name you want to save the model with. (Default is 'XGBoost_plain_classifier')
+        output_path : str, optional
+            Full path for the .joblib file; overrides the default `models/weights/{model_name}.joblib`.
         """
         self._check_dataframe(df)
         df_processed = self._process_dataframe(df.copy())
@@ -126,8 +128,11 @@ class LinearModel():
         self.plain_detector = self._optimize_plain_model(X, y)
         
         if save_model:
-            os.makedirs("models/weights", exist_ok=True)
-            joblib.dump(self.plain_detector, f"models/weights/{model_name}.joblib")
+            path = output_path if output_path else f"models/weights/{model_name}.joblib"
+            out_dir = os.path.dirname(os.path.abspath(path))
+            if out_dir:
+                os.makedirs(out_dir, exist_ok=True)
+            joblib.dump(self.plain_detector, path)
             
         logger.info("Model trained")
     

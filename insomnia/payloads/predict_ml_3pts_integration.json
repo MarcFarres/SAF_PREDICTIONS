@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "date": "2026-04-21 13:00:00",
+      "soil_moisture_40": 0.4,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2026-04-21 13:30:00",
+      "soil_moisture_40": 0.39,
+      "irrigation_volume_0": 0.0
+    },
+    {
+      "date": "2026-04-21 14:00:00",
+      "soil_moisture_40": 0.38,
+      "irrigation_volume_0": 0.0
+    }
+  ],
+  "model": "ML",
+  "sensor_id": "6460",
+  "previous_points": 3,
+  "predict_steps": 100
+}

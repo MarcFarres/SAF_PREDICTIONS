@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2026-03-26T10:13:24.000Z",
+  "__export_date": "2026-04-22T06:03:04.000Z",
   "__export_source": "insomnia.desktop.app",
   "resources": [
     {
@@ -216,6 +216,40 @@
       "parameters": [],
       "authentication": {},
       "metaSortKey": -500,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global"
+    },
+    {
+      "_id": "req_predict_ml_3pts",
+      "parentId": "fld_saf_requests",
+      "_type": "request",
+      "name": "07 POST /predict (ML, 3 pts integración PHP)",
+      "method": "POST",
+      "url": "{{ _.base_url }}/predict",
+      "headers": [
+        {
+          "id": "h_content_json",
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "id": "h_ngrok",
+          "name": "ngrok-skip-browser-warning",
+          "value": "true"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"data\": [\n    {\n      \"date\": \"2026-04-21 13:00:00\",\n      \"soil_moisture_40\": 0.4,\n      \"irrigation_volume_0\": 0.0\n    },\n    {\n      \"date\": \"2026-04-21 13:30:00\",\n      \"soil_moisture_40\": 0.39,\n      \"irrigation_volume_0\": 0.0\n    },\n    {\n      \"date\": \"2026-04-21 14:00:00\",\n      \"soil_moisture_40\": 0.38,\n      \"irrigation_volume_0\": 0.0\n    }\n  ],\n  \"model\": \"ML\",\n  \"sensor_id\": \"6460\",\n  \"previous_points\": 3,\n  \"predict_steps\": 100\n}\n"
+      },
+      "parameters": [],
+      "authentication": {},
+      "metaSortKey": -400,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
